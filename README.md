@@ -8,7 +8,7 @@ Installation
 
 Optional:
 
-For some premade saves, download the SRSavestateLoaderSaves folder and place it in Slime Rancher's persistent data folder (e.x. C:\Users\\[NAME]\AppData\LocalLow\Monomi Park\Slime Rancher). Replace duplicate files if needed.
+For some premade saves, unzip the downloaded SRSavestateLoaderSaves.zip file and place the extracted folder in Slime Rancher's persistent data folder (e.x. C:\Users\\[NAME]\AppData\LocalLow\Monomi Park\Slime Rancher). Replace duplicate files if needed.
 
 ---
 Usage
@@ -38,4 +38,5 @@ Open Source Instructions for Users:
 
 ---
 DM me on Discord @ giraffe_boi if you have any issues with the mod.
+
 
