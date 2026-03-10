@@ -1,0 +1,6 @@
+C:\Users\clayt\Downloads\SRSavestateLoader\SRSavestateLoader\obj\Release\SRSavestateLoader.csproj.AssemblyReference.cache
+C:\Users\clayt\Downloads\SRSavestateLoader\SRSavestateLoader\obj\Release\SRSavestateLoader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\clayt\Downloads\SRSavestateLoader\SRSavestateLoader\obj\Release\SRSavestateLoader.csproj.CoreCompileInputs.cache
+C:\Users\clayt\Downloads\SRSavestateLoader\Release\ModInfo.txt
+C:\Users\clayt\Downloads\SRSavestateLoader\Release\SRSavestateLoader.dll
+C:\Users\clayt\Downloads\SRSavestateLoader\SRSavestateLoader\obj\Release\SRSavestateLoader.dll

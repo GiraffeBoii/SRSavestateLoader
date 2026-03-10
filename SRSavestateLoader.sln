@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E4CADAD7-1DA4-4963-A611-4C1FF249F3FE}") = "SRSavestateLoader", "SRSavestateLoader\SRSavestateLoader.csproj", "{5E7E31E4-6BFB-401E-88BE-4E347C58FC97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E7E31E4-6BFB-401E-88BE-4E347C58FC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7E31E4-6BFB-401E-88BE-4E347C58FC97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {fcaf8c84-8448-442f-aa88-09392c9732c9}
+	EndGlobalSection
+EndGlobal

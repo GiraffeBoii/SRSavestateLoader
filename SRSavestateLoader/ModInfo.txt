@@ -1,0 +1,12 @@
+Usage:
+	To load the current save, press the loadSave key (default U).
+	To change the current save, press the switchSave key (defualt N) and select the new save.
+	To create a new save, press the newSave key (defualt O) and insert the name of the new save. The name may not be empty and may not share the name of another save.
+	Hotkeys can be configured in the UMF settings (Shift+F10 in game).
+	To import a save, paste the .sav file into the SRSavestateLoaderSaves folder in the Slime Rancher persistent data folder (e.x. C:\Users\[NAME]\AppData\LocalLow\Monomi Park\Slime Rancher).
+
+Recommended for use with:
+	SRCheatMenu by UMF Dev (https://umodframework.com/mod?id=2)
+	SRSpeedrunHelper by Supra (https://github.com/supra0/SRSpeedrunHelper/releases/tag/v1.2)
+
+Created by Giraffe
