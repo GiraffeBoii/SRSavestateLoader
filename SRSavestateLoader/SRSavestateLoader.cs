@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using UModFramework.API;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -114,6 +115,7 @@ namespace SRSavestateLoader
             {
                 AutoSaveDirector autoSaveDirector = SRSingleton<GameContext>.Instance.AutoSaveDirector;
                 autoSaveDirector.SaveGameAndFlush();
+                Thread.Sleep(500);
                 FileInfo newSav = getRecentSavFile();
 
                 newSav.MoveTo($"{modSavesFolder}\\{saveName}.sav");
