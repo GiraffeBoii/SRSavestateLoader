@@ -7,6 +7,6 @@ Usage:
 
 Recommended for use with:
 	SRCheatMenu by UMF Dev (https://umodframework.com/mod?id=2)
-	SRSpeedrunHelper by Supra (https://github.com/supra0/SRSpeedrunHelper/releases/tag/v1.2)
+	SRSpeedrunHelper by Supra (https://github.com/supra0/SRSpeedrunHelper/releases/latest)
 
 Created by Giraffe
