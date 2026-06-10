@@ -62,6 +62,9 @@ namespace SRSavestateLoader
             UMFGUI.RegisterBind("loadSave", SRSavestateLoaderConfig.loadSave.ToString(), () => loadSave($"{modSavesFolder}\\{currentSave}"));
             UMFGUI.RegisterBind("newSave", SRSavestateLoaderConfig.newSave.ToString(), () => toggleCreatingSaves());
             UMFGUI.RegisterBind("switchSave", SRSavestateLoaderConfig.switchSave.ToString(), () => toggleSwitchingSaves());
+            UMFGUI.RegisterBind("freeze", "I", () => testFreeze());
+            UMFGUI.RegisterBind("unfreeze", "Y", () => testUnfreeze());
+
 
         }
 
@@ -94,12 +97,28 @@ namespace SRSavestateLoader
 
             try{ 
                 AutoSaveDirector autoSaveDirector = SRSingleton<GameContext>.Instance.AutoSaveDirector;
+
                 SRSavestateLoader.Log("loading save");
-                Pause(true);
+                
+                /*
+                 * on versions prior to 1.4.4, camera locking behavior on death is slightly different. in this case calling unfreeze after a load on 1.4.4 behaves as expected, but softlocks on earlier versions
+                 * to make it work on earlier versions, the death freeze must be called prior to the load. calling freeze consectutively also softlocks, however, so only call freeze if it is not already frozen from a normal death
+                 * after the load, unfreezing should behave as expected always ... hopefully
+                 * TLDR: games cursed idk
+                 */ 
+                LockOnDeath lockOnDeath = SRSingleton<LockOnDeath>.Instance;
+                try
+                {
+                    if (!lockOnDeath.Locked())
+                    {
+                        lockOnDeath.Freeze();
+                    }
+                }
+                catch { }
+
                 autoSaveDirector.BeginLoad(gameName, saveName, null);
 
                 //prevents softlock if loaded while dead
-                LockOnDeath lockOnDeath = SRSingleton<LockOnDeath>.Instance;
                 lockOnDeath.Unfreeze();
             }
             catch (Exception e)
